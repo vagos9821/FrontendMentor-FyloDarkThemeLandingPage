@@ -1,0 +1,377 @@
+/* BODY AND EVERYTHING */
+
+body {
+    background: rgb(28, 34, 48);
+    background: linear-gradient(0deg, rgba(28, 34, 48, 1) 0%, rgba(12, 21, 36, 1) 19%, rgba(24, 30, 42, 1) 19%, rgba(24, 30, 42, 1) 70%, rgba(27, 35, 48, 1) 70%, rgba(12, 21, 36, 1) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/* typography */
+
+@font-face {
+    font-family: HKG;
+    src: url(fonts/HKGrotesk-RegularLegacy.otf);
+}
+
+@font-face {
+    font-family: HKGB;
+    src: url(fonts/HKGrotesk-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    font-family: "HKG";
+}
+
+
+/* -------------------------------------------------------- */
+
+
+/* HEADER */
+
+#header {
+    width: 90%;
+    display: flex;
+    padding: 3em 3em 0 3em;
+    justify-content: space-between;
+}
+
+#headerCategories {
+    display: flex;
+    gap: 3em;
+}
+
+#headerCategories>a {
+    color: #ffffffc9
+}
+
+#headerCategories>a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+/* HERO #1 */
+
+#hero1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    text-align: center;
+    margin-top: 5em;
+}
+
+#hero1-title {
+    margin-top: 1em;
+}
+
+#hero1-text {
+    width: 450px;
+    margin: 1.5em;
+}
+
+#hero1Button {
+    background: rgb(78, 198, 212);
+    background: linear-gradient(90deg, rgba(78, 198, 212, 1) 0%, rgba(63, 173, 206, 1) 100%);
+    border: 0;
+    width: 18em;
+    border-radius: 20px;
+    height: 3em;
+    font-weight: 600;
+}
+
+#hero1Button:hover {
+    background: #8CDAE6;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+/* CATEGORIES */
+
+#categories {
+    margin-top: 10em;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    column-gap: 200px;
+    row-gap: 80px;
+}
+
+.categorie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5em;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+/* HERO #2 */
+
+#hero2 {
+    margin-top: 10em;
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    justify-content: center;
+    width: 1000px;
+}
+
+#hero2Details {
+    display: grid;
+    row-gap: 1.5em;
+}
+
+#hero2-title {
+    width: 300px;
+    font-family: "HKGB";
+}
+
+#hero2-text1,
+#hero2-text2 {
+    width: 550px;
+}
+
+#hero2-btn {
+    width: 176px;
+    color: #62E0D9;
+    border-bottom: 1px solid #62E0D9;
+    text-align: center;
+    display: flex;
+    gap: 1em;
+}
+
+#hero2-btn:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+use:hover {
+    fill: white;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+/* COMMENTS */
+
+#comments {
+    margin-top: 10em;
+}
+
+#cards {
+    display: flex;
+    width: 1200px;
+    gap: 2em;
+}
+
+#feedback1,
+#feedback2,
+#feedback3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #21293C;
+    border-radius: 5px;
+    padding: 2em 1em;
+    gap: 2em;
+}
+
+#feedback1-text,
+#feedback2-text,
+#feedback3-text {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#creator {
+    height: 40px;
+    border-radius: 50%;
+    grid-area: icon;
+}
+
+#profile {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    align-items: center;
+    grid-template-areas: "icon name" "icon job";
+}
+
+#job {
+    font-weight: 100;
+}
+
+#quotes {
+    z-index: -1;
+    position: relative;
+    top: -240px;
+    left: -10px;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+/* SUBSCRIBE */
+
+#subscribe {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    gap: 2em;
+    background-color: #1B2330;
+    padding: 2em 5em 2em 5em;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: #00000080 5px 5px 25px;
+}
+
+#get-started {
+    background: rgb(78, 198, 212);
+    background: linear-gradient(90deg, rgba(78, 198, 212, 1) 0%, rgba(63, 173, 206, 1) 100%);
+    border: 0;
+    width: 18em;
+    border-radius: 20px;
+    height: 3em;
+    font-weight: 600;
+}
+
+#email-input {
+    border-radius: 50px;
+    height: 3em;
+    border: none;
+    width: 400px;
+    padding-left: 2em;
+    color: black;
+}
+
+#email-input:focus {
+    outline: none;
+}
+
+#email-input:required:invalid {
+    outline: red;
+}
+
+::placeholder {
+    opacity: .5;
+    color: black;
+}
+
+#get-started:hover {
+    background: #8CDAE6;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+/* FOOTER */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2em;
+    margin: auto;
+    padding: 10em 0 10em 0;
+}
+
+#logo {
+    height: 52px;
+    width: 176px;
+}
+
+#footer-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+#locations {
+    width: 350px;
+    gap: 2em;
+    display: flex;
+}
+
+#locations>img {
+    height: 18px;
+    width: 12px;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 14px;
+}
+
+#tel,
+#email {
+    gap: 1.5em;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 15em;
+}
+
+#interesting1,
+#interesting2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.social [class*="fa fa-"],
+.fa {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+/* bg */
+
+#bg {
+    position: absolute;
+    top: 780px;
+    z-index: -3;
+}
